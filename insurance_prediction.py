@@ -80,7 +80,10 @@ def main():
     col1, col2 = st.columns(2)
 
     with col1:
-        age = st.number_input("Age", min_value=0, value=63, help="Enter the age")
+        # age = st.number_input("Age", min_value=0, value=63, help="Enter the age")
+        age = st.slider("Age", min_value=18, max_value=100, value=32)
+        # sex = st.selectbox("Gender", ["Male", "Female"])
+        # bmi = st.number_input("BMI")
         sex = st.selectbox("Gender", ["Male", "Female"], help="Select the sex")
         bmi = st.number_input("BMI", min_value=0, value=62, help="Enter the BMI")
         
